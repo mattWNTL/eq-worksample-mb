@@ -107,7 +107,7 @@ const Chart = ({data, dataType}) => {
                                 yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: true, reverse: false }}
                                 axisTop={null}
                                 axisRight={null}
-                                axisBottom={{
+                                axisBottom={dataType.startsWith('daily') ? {
                                     orient: 'bottom',
                                     tickSize: 5,
                                     tickPadding: 5,
@@ -115,7 +115,7 @@ const Chart = ({data, dataType}) => {
                                     legend: "Date",
                                     legendOffset: 36,
                                     legendPosition: 'middle'
-                                }}
+                                } : null}
                                 axisLeft={{
                                     orient: 'left',
                                     tickSize: 5,
@@ -138,14 +138,14 @@ const Chart = ({data, dataType}) => {
                                 axisTop={null}
                                 axisRight={null}
                                 margin={{ top: 60, right: 60, bottom: 60, left: 95 }}
-                                axisBottom={{
+                                axisBottom={dataType.startsWith('daily') ? {
                                     tickSize: 5,
                                     tickPadding: 5,
                                     tickRotation: 0,
                                     legend: 'Date',
                                     legendPosition: 'middle',
                                     legendOffset: 32
-                                }}
+                                } : null}
                                 axisLeft={{
                                     orient: 'left',
                                     tickSize: 5,

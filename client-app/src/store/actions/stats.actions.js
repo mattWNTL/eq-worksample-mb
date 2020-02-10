@@ -1,6 +1,5 @@
 import { gettingData, setDone, setErr } from "./data.actions"
 import { handleErrors } from "../../utils/utils"
-import { APIURL } from "../../utils/config"
 
 export function fetchDailyStats(){
     return function(dispatch){

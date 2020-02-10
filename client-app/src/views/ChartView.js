@@ -11,7 +11,9 @@ const ChartView = () => {
     const dispatch = useDispatch()
     
     useEffect(() => {
-        toggleDataType(dataType)
+        if(data. length == 0){
+            dispatch(fetchDailyStats())
+        }
     }, [])
 
     const toggleDataType = (val) =>{

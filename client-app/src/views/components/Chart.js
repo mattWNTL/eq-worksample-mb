@@ -184,10 +184,8 @@ const Chart = ({data, dataType}) => {
                             />
                         }
                     </>
-                }
-                
+                }   
             </div>
-            
         </div>
     )
 }

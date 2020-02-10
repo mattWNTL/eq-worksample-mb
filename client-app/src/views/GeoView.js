@@ -11,11 +11,9 @@ const GeoView = () => {
 
     useEffect(() => {
         if (!navigator.geolocation) {
-            //status.textContent = 'Geolocation is not supported by your browser';
             setLat(43.651070)
             setLong(-79.347015)
         } else {
-            //status.textContent = 'Locating…';
             navigator.geolocation.getCurrentPosition(locationSuccess, locationError);
         }
 
@@ -31,6 +29,7 @@ const GeoView = () => {
     }
 
     function locationError(){
+        //toronto
         setLat(43.651070)
         setLong(-79.347015)
     }

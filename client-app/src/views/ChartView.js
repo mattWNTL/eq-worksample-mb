@@ -12,7 +12,7 @@ const ChartView = () => {
     
     useEffect(() => {
         dispatch(fetchDailyStats())
-    }, [])
+    }, [data])
 
     const toggleDataType = (val) =>{
         switch(val){

@@ -20,7 +20,7 @@ const Chart = ({data, dataType}) => {
                 updateData('impressions', chartType)
             }
         }
-    }, [data, dataType, selectedMetric, chartType])
+    }, [data, dataType, chartType])
 
     const updateData = (metric, chartType) => {
         setMetric(metric)

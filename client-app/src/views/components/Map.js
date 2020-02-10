@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const LocationComponent = ({ text }) => <div>{text}</div>;
+const LocationComponent = ({ text }) => <div>{text.charAt(0)}</div>;
 
 const GeoMap = ({data, lat, long}) => {
   const [loading, setLoading] = useState(true)
     useEffect(() => {
-      if(lat && long){
+      if(lat && long && data){
         setLoading(false)
       }
-    }, [lat, long])
+    }, [data])
+
     const mapOptions = {
         center: {
             lat: lat,

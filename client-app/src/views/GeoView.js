@@ -4,7 +4,7 @@ import { fetchPOI } from '../store/actions/poi.actions';
 import GeoMap from './components/Map';
 
 const GeoView = () => {
-    const {loading, data} = useSelector(state => state.data) 
+    const {data} = useSelector(state => state.data) 
     const [lat, setLat] = useState()
     const [long, setLong] = useState()
     const dispatch = useDispatch()
@@ -31,8 +31,6 @@ const GeoView = () => {
     function locationError(){
         //err
     }
-
-
 
     return(
         <div className="card mt-3 p-3" style={{height: 600, width: 1000, margin: 'auto'}}>

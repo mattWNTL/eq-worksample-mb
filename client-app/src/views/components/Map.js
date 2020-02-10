@@ -27,7 +27,7 @@ const GeoMap = ({data, lat, long}) => {
           <div className="loader"></div>
         :
           <GoogleMapReact
-            bootstrapURLKeys={{ key: process.env.GMAPKEY}}
+            bootstrapURLKeys={{ key: 'AIzaSyBzw9RZqRjpNacNglEUVHOT67Wttu-yxtM'}}
             defaultCenter={mapOptions.center}
             defaultZoom={mapOptions.zoom}
           >
